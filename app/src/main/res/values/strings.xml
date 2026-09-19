@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lesbian Hub</string>
+    <string name="nav_models">模型</string>
+    <string name="nav_datasets">数据集</string>
+    <string name="nav_spaces">Space</string>
+    <string name="nav_papers">论文</string>
+    <string name="menu_source">数据源</string>
+    <string name="detail_copy">复制链接</string>
+    <string name="detail_web">浏览器打开</string>
+</resources>

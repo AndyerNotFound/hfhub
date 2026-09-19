@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_models" android:icon="@drawable/ic_nav_models" android:title="@string/nav_models" />
+    <item android:id="@+id/nav_datasets" android:icon="@drawable/ic_nav_datasets" android:title="@string/nav_datasets" />
+    <item android:id="@+id/nav_spaces" android:icon="@drawable/ic_nav_spaces" android:title="@string/nav_spaces" />
+    <item android:id="@+id/nav_papers" android:icon="@drawable/ic_nav_papers" android:title="@string/nav_papers" />
+</menu>
