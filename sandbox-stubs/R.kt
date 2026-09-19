@@ -1,9 +1,9 @@
 package com.hfhub.android
 
-
-
-
-
+/**
+ * 沙箱类型检查用的 R 替身(真机由 AGP 从资源生成, 不进 APK)。
+ * 只声明代码里实际引用的符号, 与 res/ 下资源一一对应。
+ */
 object R {
     object id {
         const val root = 0x7f010001

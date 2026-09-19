@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lesbian Hub</string>
+    <string name="app_name">Hugging Hub</string>
     <string name="nav_models">模型</string>
     <string name="nav_datasets">数据集</string>
     <string name="nav_spaces">Space</string>

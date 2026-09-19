@@ -1,17 +1,18 @@
-Lesbian Hub (hfhub) 源码提取包 (2026-09-19)
+Hugging Hub (hfhub) 源码提取包 (2026-09-20)
 ===========================================
-版本: v0.2.0 / versionCode 11
-来源: 手机运行版与沙箱开发版核对后的最新源码 (逐文件 md5 校验一致)
+版本: v0.2.1 / versionCode 12
+来源: 手机 ~/hfhub 与沙箱 /workspace/hfhub 逐文件 md5 校验一致
+     (2026-09-20 已含「Lesbian Hub → Hugging Hub」改名 + 换图标)
 
 【内容】
-hfhub/   HuggingFace 原生浏览客户端 (Kotlin + Material 组件, 全代码构建)
-  app/src/main/java/com/hfhub/android/   全部源码
-      (模型/数据集/Spaces/论文 四列表 + 详情页 + 筛选页 + 用户主页 +
+hfhub/   HuggingFace 原生浏览客户端 (Kotlin + Material, 全代码构建)
+  app/src/main/java/com/hfhub/android/   全部源码 (23 个 .kt)
+      (模型 / 数据集 / Spaces / 论文 四列表 + 详情页 + 筛选页 + 用户主页 +
        Markdown 渲染器 / 图片加载器 / 链接智能跳转 Links.kt ...)
-  app/src/main/res/                      资源 (少量 XML)
-  app/build.gradle.kts                   versionCode 11 / versionName 0.2.0
-  sandbox-stubs/                         离线类型检查桩 (R / BuildConfig / viewpager2)
-  gradle/ gradlew                        构建包装器
+  app/src/main/res/   资源 (布局 / 图标 / 字符串 / 主题)
+  app/build.gradle.kts   versionCode 12 / versionName 0.2.1
+  sandbox-stubs/   离线类型检查桩 (R / BuildConfig / viewpager2)
+  gradle/ gradlew   构建包装器
 
 【处理】
 - 去注释: 全部 .kt/.kts/.xml 注释移除 (字符串 / 模板插值 / raw 字符串完整保留; 行号不变)
@@ -21,9 +22,9 @@ hfhub/   HuggingFace 原生浏览客户端 (Kotlin + Material 组件, 全代码�
 【验证 (全部真跑)】
 - Kotlin 全量类型检查 (去注释后): EXIT 0
   (K2JVMCompiler + android.jar + androidx/okhttp/gson 依赖 + sandbox-stubs)
-- XML 良构校验: 通过
+- XML 良构校验: 27 个, 0 失败
 - 与手机运行版逐文件比对: 源码 1:1 一致
 
 【构建】
 - 需 Android SDK + Gradle (示例: ./gradlew :app:assembleDebug)
-- 默认接口基址 hf-mirror.com (可在设置修改)
+- 默认接口基址 hf-mirror.com (可在设置切换官方 huggingface.co)
